@@ -12,7 +12,7 @@ class Application
 {
     public function run(): void
     {
-        $key = '77qn9aax-qrrm-idki:lnh0-fm2nhmp0yca7';
+        $key = $_ENV['key1'];
         $url = 'https://api.printful.com/shipping/rates';
         
         $printfulApi = new PrintfulApi($key, $url); 
